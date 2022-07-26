@@ -2,14 +2,8 @@ import * as React from 'react';
 import "../styles/foto.css"
 import "../styles/contacts.css"
 import foto from '../images/foto.jpg'
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import {Box, Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar, Grid  } from '@mui/material';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -17,8 +11,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 import CakeIcon from '@mui/icons-material/Cake';
 import { styled } from '@mui/material/styles';
-import { Grid } from '@mui/material';
 const Layout = ({t}) => {
+    // media queries
     const Root = styled('div')(({ theme }) => ({
         [theme.breakpoints.down('sm')]: {
             width: "100%",
@@ -27,10 +21,12 @@ const Layout = ({t}) => {
         [theme.breakpoints.up('md')]: {
             width: "40%",
             height: "auto",
+            borderRight:"2px solid grey",
         },
         [theme.breakpoints.up('lg')]: {
             width: "40%",
             height: "auto",
+            borderRight:"2px solid grey",
         },
     }));
     return (

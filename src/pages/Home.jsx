@@ -20,7 +20,9 @@ const Home = ({ t }) => {
             <Layout 
             t={t}
             />
-            <About />
+            <About 
+            t={t}
+            />
         </Root>
     );
 }
