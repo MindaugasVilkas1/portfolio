@@ -1,23 +1,26 @@
 import Layout from "../components/Layout";
 import About from "../components/About";
 import { styled } from '@mui/material/styles';
-const Home = () => {
+const Home = ({ t }) => {
     const Root = styled('div')(({ theme }) => ({
         [theme.breakpoints.down('sm')]: {
-          width:"100%",
-        
+            width: "100%",
+
         },
         [theme.breakpoints.up('md')]: {
-            display:"flex"
+            display: "flex"
         },
         [theme.breakpoints.up('lg')]: {
-            display:"flex",
+            display: "flex",
         },
-      }));
+    }));
     return (
+        
         <Root>
-            <Layout />
-            <About/>
+            <Layout 
+            t={t}
+            />
+            <About />
         </Root>
     );
 }

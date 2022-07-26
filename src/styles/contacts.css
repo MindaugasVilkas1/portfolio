@@ -4,3 +4,10 @@
     text-align: center;
     
 }
+.linkedin{
+    text-decoration: none;
+    color: black;
+}
+.linkedin:hover{
+    text-decoration: underline;
+}

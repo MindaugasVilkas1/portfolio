@@ -1,0 +1,13 @@
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.navigation button{
+    padding: 5px;
+    margin: 5px;
+}

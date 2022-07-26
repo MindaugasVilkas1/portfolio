@@ -1,0 +1,21 @@
+{
+    "title":{
+        "1":"Junior Front End Developer"
+    },
+    "contact":{
+        "1":"About and contact",
+        "2":"Name",
+        "3":"Phone Number",
+        "4":"Email",
+        "5":"Home Address",
+        "6":"Date of Birth",
+        "7":"Rygos st.44-25, Vilnius"
+    },
+    "skills":{
+        "1":"Professional skills"
+    },
+    "language":{
+        "1":"Language"
+    }
+ 
+}

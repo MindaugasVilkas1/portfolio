@@ -1,0 +1,21 @@
+{
+    "title":{
+        "1":" Front End programuotojas"
+    },
+    "contact":{
+        "1":"Kontaktiniai duomenys",
+        "2":"Vardas Pavardė",
+        "3":"Telefono numeris",
+        "4":"Elektroninis paštas",
+        "5":"Namų Adresas",
+        "6":"Gymimo data",
+        "7":"Rygos g.44-25, Vilnius"
+    },
+    "skills":{
+        "1":"Profesijos įgūdžiai"
+    },
+    "language":{
+        "1":"Kalba"
+    }
+ 
+}

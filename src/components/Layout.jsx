@@ -13,55 +13,53 @@ import Avatar from '@mui/material/Avatar';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 import CakeIcon from '@mui/icons-material/Cake';
 import { styled } from '@mui/material/styles';
-
-const Layout = () => {
+import { Grid } from '@mui/material';
+const Layout = ({t}) => {
     const Root = styled('div')(({ theme }) => ({
         [theme.breakpoints.down('sm')]: {
-          width:"100%",
-          height: "auto",
+            width: "100%",
+            height: "auto",
         },
         [theme.breakpoints.up('md')]: {
-            width:"40%",
+            width: "40%",
+            height: "auto",
         },
         [theme.breakpoints.up('lg')]: {
-            width:"40%",
+            width: "40%",
+            height: "auto",
         },
-      }));
+    }));
     return (
         <Root>
             <Box
-                sx={{
-                    
-                    backgroundColor: 'primary.dark',
-                    '&:hover': {
-                        backgroundColor: 'primary.main',
-                    },
-                }}>
+                sx={{ backgroundColor: 'primary.light', }}>
                 <img className="foto" alt="foto" src={foto} />
                 <Typography
                     variant="h4" gutterBottom component="div">
                     Mindaugas Vilkas
                 </Typography>
                 <Typography variant="h6" gutterBottom component="div">
-                    Junior Front End Developer
+                {t('title.1')}
                 </Typography>
-                <ContactsOutlinedIcon />
-                <Typography variant="h6" gutterBottom component="div">
-                    About and Contact
-                </Typography>
-                <List sx={{ width: '100%', maxWidth: 300, bgcolor: 'primary.dark', margin: '0 auto' }}>
+                <List sx={{
+                    width: '100%', maxWidth: 300, bgcolor: 'primary.light', margin: '0 auto'
+                }}>
+                    <ContactsOutlinedIcon />
+                    <Typography variant="h6" gutterBottom component="div">
+                    {t('contact.1')}
+                    </Typography>
                     <ListItem>
                         <ListItemAvatar>
                             <Avatar>
-                                <BadgeOutlinedIcon
-                                    sx={{ color: 'black' }}
+                                <BadgeOutlinedIcon sx={{ color: 'black' }}
                                 />
                             </Avatar>
                         </ListItemAvatar >
-                        <ListItemText primary="Name" secondary="Mindaugas Vilkas" />
+                        <ListItemText primary={t('contact.2')}secondary="Mindaugas Vilkas" />
                     </ListItem>
                     <ListItem>
                         <ListItemAvatar>
@@ -69,7 +67,7 @@ const Layout = () => {
                                 <ContactPhoneOutlinedIcon sx={{ color: 'black' }} />
                             </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Phone Number" secondary="+37067786956" />
+                        <ListItemText primary={t('contact.3')} secondary="+37067786956" />
                     </ListItem>
                     <ListItem>
                         <ListItemAvatar>
@@ -77,7 +75,20 @@ const Layout = () => {
                                 <MailOutlinedIcon sx={{ color: 'black' }} />
                             </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Email" secondary="mindaugasvilkas3@yahoo.com" />
+                        <ListItemText primary={t('contact.4')} secondary="mindaugasvilkas3@yahoo.com" />
+                    </ListItem>
+                    <ListItem>
+                        <ListItemAvatar>
+                            <Avatar>
+                                <LinkedInIcon sx={{ color: 'black' }} />
+                            </Avatar>
+                        </ListItemAvatar>
+                        <a className='linkedin'
+                            href='https://www.linkedin.com/in/mindaugas-vilkas-118137244' target="_blank" rel="noreferrer">
+                            <ListItemText
+
+                                primary="Linkedin" />
+                        </a>
                     </ListItem>
                     <ListItem>
                         <ListItemAvatar>
@@ -85,7 +96,7 @@ const Layout = () => {
                                 <HomeOutlinedIcon sx={{ color: 'black' }} />
                             </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Home Address" secondary="Rygos st.44-25, Vilnius" />
+                        <ListItemText primary={t('contact.5')} secondary={t('contact.7')}/>
                     </ListItem>
                     <ListItem>
                         <ListItemAvatar>
@@ -93,11 +104,37 @@ const Layout = () => {
                                 <CakeIcon sx={{ color: 'black' }} />
                             </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Date of Birth" secondary="1984-04-21" />
+                        <ListItemText primary={t('contact.6')} secondary="1984-04-21" />
                     </ListItem>
                 </List>
+                <Typography variant="h6" gutterBottom component="div">
+                {t('skills.1')}
+                </Typography>
+                <Grid container spacing={2}>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="HTML5" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="CSS" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="JavaScript" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="Node JS" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="My SQL" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="TypeScript" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="React JS" />
+                    </Grid>
+                </Grid>
             </Box>
-        </Root>
+        </Root >
     );
 }
 
