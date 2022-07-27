@@ -44,13 +44,13 @@ const Nav = ({ handleclick, t }) => {
     return (
         <Box
             sx={{
-                backgroundColor: 'primary.light',
+                backgroundColor: 'primary.main',
                 padding: '10px',
                 display: 'flex',
                 justifyContent: "space-between",
                 alignItems: 'center',
                 '&:hover': {
-                    backgroundColor: 'primary.main',
+                    backgroundColor: 'primary.light',
                 }
             }}>
             <Stack direction="row" spacing={2}>

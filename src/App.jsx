@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Nav from "./components/nav";
+import Footer from "./components/footer";
+import NotFound from "./pages/notFound";
 import './App.css';
 import { useTranslation } from "react-i18next";
 import 'flag-icons'
@@ -22,7 +24,13 @@ function App() {
           t={t}
           />}
         />
+        <Route path="/*" element={
+          <NotFound
+          t={t}
+          />
+        } />
       </Routes>
+      <Footer/>
     </div>
   );
 }

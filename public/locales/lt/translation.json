@@ -45,6 +45,11 @@
         "4":"Kelionės",
         "5":"Knygų skaitymas",
         "6":"Biografijos ir autobiografijos, kelionių knygos, Verslo knygos"
+    },
+    "notFound":{
+        "1":"Atsiprašome",
+        "2":"Tokio puslapio nėra",
+        "3":"Prašome grįžti į pradinį puslapį..."
     }
 
  
