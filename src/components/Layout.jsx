@@ -10,6 +10,7 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 import CakeIcon from '@mui/icons-material/Cake';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { styled } from '@mui/material/styles';
 const Layout = ({t}) => {
     // media queries
@@ -32,7 +33,7 @@ const Layout = ({t}) => {
     return (
         <Root>
             <Box
-                sx={{ backgroundColor: 'primary.light', }}>
+                sx={{ backgroundColor: 'primary.light', height:"100%"}}>
                 <img className="foto" alt="foto" src={foto} />
                 <Typography
                     variant="h4" gutterBottom component="div">
@@ -45,7 +46,7 @@ const Layout = ({t}) => {
                     width: '100%', maxWidth: 300, bgcolor: 'primary.light', margin: '0 auto'
                 }}>
                     <ContactsOutlinedIcon />
-                    <Typography variant="h6" gutterBottom component="div">
+                    <Typography  sx={{textDecoration:"underline"}} variant="h6" gutterBottom component="div">
                     {t('contact.1')}
                     </Typography>
                     <ListItem>
@@ -89,6 +90,19 @@ const Layout = ({t}) => {
                     <ListItem>
                         <ListItemAvatar>
                             <Avatar>
+                                <GitHubIcon sx={{ color: 'black' }} />
+                            </Avatar>
+                        </ListItemAvatar>
+                        <a className='linkedin'
+                            href='https://github.com/MindaugasVilkas1' target="_blank" rel="noreferrer">
+                            <ListItemText
+
+                                primary="Github" />
+                        </a>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemAvatar>
+                            <Avatar>
                                 <HomeOutlinedIcon sx={{ color: 'black' }} />
                             </Avatar>
                         </ListItemAvatar>
@@ -103,7 +117,7 @@ const Layout = ({t}) => {
                         <ListItemText primary={t('contact.6')} secondary="1984-04-21" />
                     </ListItem>
                 </List>
-                <Typography variant="h6" gutterBottom component="div">
+                <Typography  sx={{textDecoration:"underline"}} variant="h6" gutterBottom component="div">
                 {t('skills.1')}
                 </Typography>
                 <Grid container spacing={2}>
