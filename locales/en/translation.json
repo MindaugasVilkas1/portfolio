@@ -1,0 +1,54 @@
+{
+    "title":{
+        "1":"Junior Front End Developer"
+    },
+    "contact":{
+        "1":"About and contact",
+        "2":"Name",
+        "3":"Phone Number",
+        "4":"Email",
+        "5":"Home Address",
+        "6":"Date of Birth",
+        "7":"Rygos st.44-25, Vilnius"
+    },
+    "skills":{
+        "1":"Professional skills"
+    },
+    "language":{
+        "1":"Language"
+    },
+    "profile":{
+        "1":"Profile",
+        "2":" I am in the carrier transition from a retail manager (more than 10 years) to a developer. I had 1060 hours of Typescript (full stack) developer courses at Code Academy. During this period, I gained fundamental acquainted with several different programming languages such as HTML, CSS, javascript, node js, MySQL database, Express framework, typescript, and react js. I enjoy working in a team as well as individually. I am a determined, ambitious person striving to achieve my goals. I am looking for new opportunities to improve in my new career phase."
+    },
+        "workExpierence":{
+            "1":"Work expierence",
+            "2":"Sep 2012 - Nov 2021. Senior Retail Sales Manager",
+            "3":"Topo Centras · Full-time",
+            "4":"Responsibilities:",
+            "5":"Sales of electronic goods and services. Direct work with clients, consulting and sales. Online orders administration by email and calls, preparing commercial offers. Formation of product range and inclusion of accounting. Job with accounting software - Rivile and Ls1",
+            "6":"Sep 2008 – Oct 2012. Sales manager",
+        "7":"UAB ESEMA (BMS MEGAPOLIS) — Full-time",
+        "8":"Working with accounting software „Monarch“. Ordering goods. Preparation of commercial offers. Acceptance and dispatch of goods. Management of accounts - conclusion of leasing contracts. Work at the cash register. Direct customer consultation and sales."
+        },
+        "education":{
+            "1":"Education",
+            "2":"Jan 2022-Jul 2022 CodeAcademy",
+            "3":"Diploma, Typescript ( FullStack) studies",
+            "4":"Sep 2003-Jun 2006 Utena College",
+            "5":"Higher Education. Tourism and hotel administration"
+        },
+        "activities":{
+            "1":"Activities",
+            "2":"Sports",
+            "3":"Running, biking, swimming",
+            "4":"Traveling",
+            "5":"Reading books",
+            "6":"Biographies and autobiographies, Travel books, business books"
+        },
+        "notFound":{
+            "1":"Sorry",
+            "2":"That page can not be found",
+            "3":"Back to the homepage..."
+        }
+}
