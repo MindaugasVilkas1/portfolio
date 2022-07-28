@@ -1,9 +1,10 @@
-
-import { Box } from '@mui/material';
+import cookie from 'js-cookie'
+import { Box, Button } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import "../styles/nav.css"
 import "flag-icons"
+import { useEffect } from 'react';
 const Nav = ({ handleclick, t }) => {
     //language properties
     const languages = [
@@ -18,6 +19,12 @@ const Nav = ({ handleclick, t }) => {
             country_code: "lt"
         },
     ]
+    // get language from cookie
+    const currentLanguageCode = cookie.get('i18next')
+    const currentLanguage = languages.find(l => l.code === currentLanguageCode)
+    useEffect(() => {
+        document.body.dir = currentLanguage.dir
+    }, [currentLanguage])
     // avatar
     function stringToColor(string) {
         let hash = 0;
@@ -58,13 +65,14 @@ const Nav = ({ handleclick, t }) => {
                 >
                     {languages.map(({ code, country_code, name }) => (
                         <li key={country_code}>
-                            <button
+                            <Button variant="contained"
                                 onClick={() => handleclick(`${code}`)}
+                                disabled={code === currentLanguageCode}
                             >
                                 <span>
                                     <span className={`fi fi-${country_code}`}></span>{" "}
                                     {name}</span>
-                            </button>
+                            </Button>
                         </li>
                     ))
                     }

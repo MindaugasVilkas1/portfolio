@@ -30,8 +30,11 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     fallbackLng: "en",
+    detection:{
+      order:['cookie','htmlTag', 'localStorage', 'path', 'subdomain'],
+      caches:['cookie'],
+    },
     debug: true,
-    lng: "en",
     resources,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
