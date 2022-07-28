@@ -5,15 +5,15 @@ import Footer from "./components/footer";
 import NotFound from "./pages/notFound";
 import './App.css';
 import { useTranslation } from "react-i18next";
-import 'flag-icons'
+;
 function App() {
-
+ // multilanguage
   const { t, i18n } = useTranslation()
   function handleclick(lang) {
     i18n.changeLanguage(lang)
   }
   return (
-    <div className="App">
+      <div className="App">
       <Nav
       handleclick={handleclick}
       t={t}
@@ -31,7 +31,7 @@ function App() {
         } />
       </Routes>
       <Footer/>
-    </div>
+      </div>
   );
 }
 

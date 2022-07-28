@@ -4,10 +4,10 @@
     },
     "contact":{
         "1":"Kontaktiniai duomenys",
-        "2":"Vardas Pavardė",
+        "2":"Vardas, Pavardė",
         "3":"Telefono numeris",
         "4":"Elektroninis paštas",
-        "5":"Namų Adresas",
+        "5":"Namų adresas",
         "6":"Gymimo data",
         "7":"Rygos g.44-25, Vilnius"
     },
@@ -19,7 +19,7 @@
     },
     "profile":{
         "1":"Biografija",
-        "2":"Šiuo metu persikvalifikuoju iš mažmeninės prekybos vadybininko (daugiau nei 10 metų) į Front End programuotoją. Esu baigęs 1060 valandų Typescript (Front End) studijas „Code Academy“ akademijoje. Per šį laikotarpį iš esmės susipažinau su skirtingomis programavimo kalbomis, tokiomis kaip HTML, CSS, javascript, node js, MySQL duomenų bazė, Express karkasas, typescript ir react js. Mėgaujuosi darbu tiek komandoje tiek individualiai. Esu ryžtingas, ambicingas žmogus, siekiantis užsibrėžtų tikslų. Ieškau naujų galimybių tobulėti naujame karjeros etape."
+        "2":"Šiuo metu persikvalifikuoju iš mažmeninės prekybos vadybininko (daugiau nei 10 metų patirtis) į Front End programuotoją. Esu baigęs 1060 valandų Typescript (full stack) studijas „Code Academy“ akademijoje. Per šį laikotarpį iš esmės susipažinau su skirtingomis programavimo kalbomis, tokiomis kaip HTML, CSS, javascript, node js, MySQL duomenų bazė, Express karkasas, typescript ir react js. Mėgaujuosi darbu tiek komandoje tiek individualiai. Esu ryžtingas, ambicingas žmogus, siekiantis užsibrėžtų tikslų. Ieškau naujų galimybių tobulėti naujame karjeros etape."
     },
     "workExpierence":{
         "1":"Darbo patirtis",

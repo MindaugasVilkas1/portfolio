@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import "../styles/nav.css"
-
+import "flag-icons"
 const Nav = ({ handleclick, t }) => {
     //language properties
     const languages = [
@@ -44,14 +44,11 @@ const Nav = ({ handleclick, t }) => {
     return (
         <Box
             sx={{
-                backgroundColor: 'primary.main',
+                backgroundColor: 'primary.light',
                 padding: '10px',
                 display: 'flex',
                 justifyContent: "space-between",
                 alignItems: 'center',
-                '&:hover': {
-                    backgroundColor: 'primary.light',
-                }
             }}>
             <Stack direction="row" spacing={2}>
                 <Avatar {...stringAvatar('Mindaugas Vilkas')} />
