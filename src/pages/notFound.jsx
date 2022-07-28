@@ -6,7 +6,7 @@ const NotFound = ({t}) => {
         <Box sx={{marginTop: '250px', marginBottom: '250px',textAlign: 'center'}}>
             <Typography variant="h6">{t("notFound.1")}</Typography>
             <Typography variant="h6">{t("notFound.2")}</Typography>
-            <Link to="https://MindaugasVilkas1.github.io/portfolio">{t("notFound.3")}</Link>
+            <Link to="/portfolio">{t("notFound.3")}</Link>
         </Box>
      );
 }
