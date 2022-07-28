@@ -1,4 +1,4 @@
-
+import LanguageIcon from '@mui/icons-material/Language';
 import { Box } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
@@ -54,6 +54,10 @@ const Nav = ({ handleclick, t }) => {
                 <Avatar {...stringAvatar('Mindaugas Vilkas')} />
             </Stack>
             <div className='navigation'>
+                <LanguageIcon
+                    sx={{ fontSize: 40 }}
+                />
+                <span>{t('language.1')}</span>
                 <ul
                 >
                     {languages.map(({ code, country_code, name }) => (
