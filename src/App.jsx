@@ -24,7 +24,7 @@ function App() {
           t={t}
           />}
         />
-        <Route path="/*" element={
+        <Route path="/portfolio/*" element={
           <NotFound
           t={t}
           />
