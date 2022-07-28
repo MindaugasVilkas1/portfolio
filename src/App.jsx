@@ -19,12 +19,12 @@ function App() {
       t={t}
       />
       <Routes>
-        <Route path="/" element={
+        <Route path="https://MindaugasVilkas1.github.io/portfolio" element={
           <Home
           t={t}
           />}
         />
-        <Route path="/*" element={
+        <Route path="https://MindaugasVilkas1.github.io/portfolio/*" element={
           <NotFound
           t={t}
           />
