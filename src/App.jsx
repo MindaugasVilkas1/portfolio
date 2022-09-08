@@ -17,7 +17,7 @@ function App() {
 
   useEffect(()=>{
 ReactGa.initialize('G-E3GG1WH6S9')
-ReactGa.pageview('/')
+ReactGa.pageview(window.location.pathname + window.location.search)
   }, [])
   return (
       <div className="App">
