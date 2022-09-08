@@ -9,7 +9,7 @@ import ReactGA from "react-ga"
 ;
 import { useEffect } from "react";
 
-ReactGA.initialize('G-E3GG1WH6S9');
+ReactGA.initialize('UA-240535324-1');
 function App() {
  // multilanguage
   const { t, i18n } = useTranslation()
