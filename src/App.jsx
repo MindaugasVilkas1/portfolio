@@ -7,15 +7,18 @@ import './App.css';
 import { useTranslation } from "react-i18next";
 import ReactGA from "react-ga"
 ;
+import { useEffect } from "react";
 
 ReactGA.initialize('G-E3GG1WH6S9');
-ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
  // multilanguage
   const { t, i18n } = useTranslation()
   function handleclick(lang) {
     i18n.changeLanguage(lang)
   }
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
       <div className="App">
