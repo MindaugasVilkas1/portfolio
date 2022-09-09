@@ -8,8 +8,8 @@ import { useTranslation } from "react-i18next";
 import ReactGA from "react-ga"
 ;
 import { useEffect } from "react";
-
-ReactGA.initialize('UA-240535324-1');
+const TRACKING_ID ='UA-240535324-1'
+ReactGA.initialize(TRACKING_ID);
 function App() {
  // multilanguage
   const { t, i18n } = useTranslation()

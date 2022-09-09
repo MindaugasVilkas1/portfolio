@@ -12,7 +12,11 @@ import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 import CakeIcon from '@mui/icons-material/Cake';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { styled } from '@mui/material/styles';
+import useAnalyticsEventTracker from './useAnalyticsEventTracker';
+
 const Layout = ({t}) => {
+    //event tracker
+    const gaEventTracker = useAnalyticsEventTracker('Contacts');
     // media queries
     const Root = styled('div')(({ theme }) => ({
         [theme.breakpoints.down('sm')]: {
@@ -81,7 +85,9 @@ const Layout = ({t}) => {
                             </Avatar>
                         </ListItemAvatar>
                         <a className='linkedin'
-                            href='https://www.linkedin.com/in/mindaugas-vilkas-118137244' target="_blank" rel="noreferrer">
+                            href='https://www.linkedin.com/in/mindaugas-vilkas-118137244'
+                            onClick={()=>gaEventTracker('Linkedin')}
+                            target="_blank" rel="noreferrer">
                             <ListItemText
 
                                 primary="Linkedin" />
@@ -94,7 +100,9 @@ const Layout = ({t}) => {
                             </Avatar>
                         </ListItemAvatar>
                         <a className='linkedin'
-                            href='https://github.com/MindaugasVilkas1' target="_blank" rel="noreferrer">
+                            href='https://github.com/MindaugasVilkas1' target="_blank" rel="noreferrer"
+                            onClick={()=>gaEventTracker('Github')}
+                            >
                             <ListItemText
 
                                 primary="Github" />
