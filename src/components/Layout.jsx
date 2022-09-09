@@ -89,8 +89,7 @@ const Layout = ({t}) => {
                             onClick={()=>gaEventTracker('Linkedin')}
                             target="_blank" rel="noreferrer">
                             <ListItemText
-
-                                primary="Linkedin" />
+                                secondary="Linkedin" />
                         </a>
                     </ListItem>
                     <ListItem>
@@ -104,8 +103,7 @@ const Layout = ({t}) => {
                             onClick={()=>gaEventTracker('Github')}
                             >
                             <ListItemText
-
-                                primary="Github" />
+                                secondary="Github" />
                         </a>
                     </ListItem>
                     <ListItem>
