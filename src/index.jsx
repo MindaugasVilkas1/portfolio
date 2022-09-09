@@ -7,13 +7,14 @@ import './index.css';
 import App from './App';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Suspense fallback={( <div sx={{marginTop: '250px', marginBottom: '250px',textAlign: 'center'}}>
-  <h1 >Loading...</h1>
-</div>)} >
+  <Suspense fallback={(<div sx={{ marginTop: '250px', marginBottom: '250px', textAlign: 'center' }}>
+    <h1 >Loading...</h1>
+  </div>)} >
     <BrowserRouter>
-      <App />
+        <App />
     </BrowserRouter>
   </Suspense>
 );

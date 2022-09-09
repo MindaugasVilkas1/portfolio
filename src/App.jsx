@@ -5,13 +5,35 @@ import Footer from "./components/footer";
 import NotFound from "./pages/notFound";
 import './App.css';
 import { useTranslation } from "react-i18next";
-import ReactGA from "react-ga"
-;
-import { useEffect } from "react";
-const TRACKING_ID ='UA-240535324-1'
+import ReactGA from "react-ga";
+import { useEffect, useState } from "react";
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import { Paper} from "@mui/material";
+import { grey} from "@mui/material/colors";
+// react google analytics
+const TRACKING_ID = 'UA-240535324-1'
 ReactGA.initialize(TRACKING_ID);
+ 
 function App() {
- // multilanguage
+  const [darkMode, setDarkMode] = useState(false)
+ // create themes
+ const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+  
+});
+const lightTheme = createTheme({
+  palette: {
+    background: {
+      default: "#42a5f5",
+      paper: "#42a5f5",
+  },
+  text: {
+    secondary: grey[800],
+  },
+}});
+  // multilanguage
   const { t, i18n } = useTranslation()
   function handleclick(lang) {
     i18n.changeLanguage(lang)
@@ -21,25 +43,28 @@ function App() {
   }, []);
 
   return (
-      <div className="App">
-      <Nav
-      handleclick={handleclick}
-      t={t}
-      />
-      <Routes>
-        <Route path="/portfolio" element={
-          <Home
-          t={t}
-          />}
+    <ThemeProvider theme={darkMode? darkTheme: lightTheme}>
+      <Paper style={{padding:"20px", textAlign:"center"}}>
+        <Nav
+          handleclick={handleclick}
+          darkMode={darkMode}
+          onChange={()=>setDarkMode(!darkMode)}
         />
-        <Route path="/portfolio/*" element={
-          <NotFound
-          t={t}
+        <Routes>
+          <Route path="/portfolio" element={
+            <Home
+              t={t}
+            />}
           />
-        } />
-      </Routes>
-      <Footer/>
-      </div>
+          <Route path="/portfolio/*" element={
+            <NotFound
+              t={t}
+            />
+          } />
+        </Routes>
+        <Footer />
+      </Paper>
+    </ThemeProvider>
   );
 }
 

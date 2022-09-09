@@ -1,11 +1,13 @@
 import cookie from 'js-cookie'
-import { Box, Button } from '@mui/material';
+import { Box, Button, Switch } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import "../styles/nav.css"
 import "flag-icons"
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import { useEffect } from 'react';
-const Nav = ({ handleclick, t }) => {
+const Nav = ({ handleclick, onChange, darkMode }) => {
     //language properties
     const languages = [
         {
@@ -51,21 +53,33 @@ const Nav = ({ handleclick, t }) => {
     return (
         <Box
             sx={{
-                backgroundColor: 'primary.light',
                 padding: '10px',
                 display: 'flex',
                 justifyContent: "space-between",
                 alignItems: 'center',
             }}>
-            <Stack direction="row" spacing={2}>
-                <Avatar {...stringAvatar('Mindaugas Vilkas')} />
-            </Stack>
+            <Box
+             sx={{
+                display: 'flex',
+                justifyContent: "space-between",
+                alignItems: 'center',
+            }}>
+            {darkMode?<div>{<DarkModeOutlinedIcon/>}</div>:<div>{<LightModeOutlinedIcon/>}</div>}
+                <Switch
+                    checked={darkMode}
+                    onChange={onChange}
+                />
+                <Stack direction="row" spacing={2}>
+                    <Avatar {...stringAvatar('Mindaugas Vilkas')} />
+                </Stack>
+            </Box>
             <div className='navigation'>
                 <ul
                 >
                     {languages.map(({ code, country_code, name }) => (
                         <li key={country_code}>
                             <Button variant="contained"
+
                                 onClick={() => handleclick(`${code}`)}
                                 disabled={code === currentLanguageCode}
                             >

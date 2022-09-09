@@ -19,7 +19,7 @@ const About = ({ t }) => {
   return (
     <Root>
       <Box
-        sx={{ backgroundColor: 'primary.light', height: "100%" }}>
+        sx={{ height: "100%" }}>
         <Typography sx={{ textDecoration: "underline" }} variant="h6" gutterBottom component="div">
           {t('profile.1')}
         </Typography>
@@ -29,7 +29,7 @@ const About = ({ t }) => {
           {t('profile.2')}
         </Typography>
         <List sx={{
-          width: '100%', maxWidth: 500, bgcolor: 'primary.light', margin: '0 auto', borderBottom: "2px solid grey", paddingBottom: "5px"
+          width: '100%', maxWidth: 500, margin: '0 auto', borderBottom: "2px solid grey", paddingBottom: "5px"
         }}>
           <Typography sx={{ textDecoration: "underline" }} variant="h6" gutterBottom component="div">
             {t("workExpierence.1")}
@@ -66,7 +66,7 @@ const About = ({ t }) => {
           </ListItem>
         </List>
         <List sx={{
-          width: '100%', maxWidth: 500, bgcolor: 'primary.light', margin: '0 auto', borderBottom: "2px solid grey", paddingBottom: "5px"
+          width: '100%', maxWidth: 500, margin: '0 auto', borderBottom: "2px solid grey", paddingBottom: "5px"
         }}>
           <Typography sx={{ textDecoration: "underline" }} variant="h6" gutterBottom component="div">
             {t("education.1")}
@@ -94,7 +94,7 @@ const About = ({ t }) => {
         </List>
         <List
           sx={{
-            width: '100%', maxWidth: 500, bgcolor: 'primary.light', margin: '0 auto', paddingBottom: "5px"
+            width: '100%', maxWidth: 500, margin: '0 auto', paddingBottom: "5px"
           }}>
           <Typography sx={{ textDecoration: "underline" }} variant="h6" gutterBottom component="div">
             {t("activities.1")}

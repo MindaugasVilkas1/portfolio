@@ -37,7 +37,7 @@ const Layout = ({t}) => {
     return (
         <Root>
             <Box
-                sx={{ backgroundColor: 'primary.light', height:"100%"}}>
+                sx={{ height:"100%"}}>
                 <img className="foto" alt="foto" src={foto} />
                 <Typography
                     variant="h4" gutterBottom component="div">
@@ -47,7 +47,7 @@ const Layout = ({t}) => {
                 {t('title.1')}
                 </Typography>
                 <List sx={{
-                    width: '100%', maxWidth: 300, bgcolor: 'primary.light', margin: '0 auto'
+                    width: '100%', maxWidth: 300, margin: '0 auto'
                 }}>
                     <ContactsOutlinedIcon />
                     <Typography  sx={{textDecoration:"underline"}} variant="h6" gutterBottom component="div">
