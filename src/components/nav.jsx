@@ -65,10 +65,12 @@ const Nav = ({ handleclick, onChange, darkMode }) => {
                 alignItems: 'center',
             }}>
             {darkMode?<div>{<DarkModeOutlinedIcon/>}</div>:<div>{<LightModeOutlinedIcon/>}</div>}
+            <div>
                 <Switch
                     checked={darkMode}
                     onChange={onChange}
                 />
+                </div>
                 <Stack direction="row" spacing={2}>
                     <Avatar {...stringAvatar('Mindaugas Vilkas')} />
                 </Stack>

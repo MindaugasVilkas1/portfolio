@@ -140,13 +140,16 @@ const Layout = ({t}) => {
                         <ListItemText secondary="Node JS" />
                     </Grid>
                     <Grid item xs={4} md={6}>
-                        <ListItemText secondary="My SQL" />
-                    </Grid>
-                    <Grid item xs={4} md={6}>
                         <ListItemText secondary="TypeScript" />
                     </Grid>
                     <Grid item xs={4} md={6}>
                         <ListItemText secondary="React JS" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="MySQL" />
+                    </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="Mongo DB" />
                     </Grid>
                 </Grid>
             </Box>
