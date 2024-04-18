@@ -151,6 +151,9 @@ const Layout = ({t}) => {
                     <Grid item xs={4} md={6}>
                         <ListItemText secondary="Mongo DB" />
                     </Grid>
+                    <Grid item xs={4} md={6}>
+                        <ListItemText secondary="Salesforce" />
+                    </Grid>
                 </Grid>
             </Box>
         </Root >
