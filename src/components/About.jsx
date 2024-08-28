@@ -41,11 +41,26 @@ const About = ({ t }) => {
                 />
               </Avatar>
             </ListItemAvatar >
+            <ListItemText primary={t("workExpierence.9")} secondary={t("workExpierence.10")}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText sx={{ textAlign: "justify" }} 
+              secondary={t("workExpierence.11")}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemAvatar>
+              <Avatar>
+                <WorkHistoryIcon sx={{ color: 'black' }}
+                />
+              </Avatar>
+            </ListItemAvatar >
             <ListItemText primary={t("workExpierence.2")} secondary={t("workExpierence.3")}
             />
           </ListItem>
           <ListItem>
-            <ListItemText sx={{ textAlign: "justify" }} primary={t("workExpierence.4")}
+            <ListItemText sx={{ textAlign: "justify" }}
               secondary={t("workExpierence.5")}
             />
           </ListItem>
